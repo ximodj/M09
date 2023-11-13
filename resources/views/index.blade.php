@@ -17,6 +17,7 @@
 <body>
 <header>
     <h1><?=$greeting;?></h1>
+    <p>Prova xivato = <?=dd($tasks)?></p>
 
 </header>
 </body>

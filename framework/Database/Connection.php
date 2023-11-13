@@ -1,6 +1,6 @@
 <?php
 
-namespace Framework\Database;
+namespace framework\Database;
 
 use PDO;
 
