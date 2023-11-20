@@ -4,7 +4,6 @@ namespace framework;
 
 use Exception;
 
-
 class App
 {
     private static $container = [];
@@ -19,8 +18,6 @@ class App
         if (!array_key_exists($key, static::$container)) {
             throw new Exception("No {$key} is bound in container");
         }
+        return static::$container[$key];
     }
 }
-
-
-

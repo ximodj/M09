@@ -13,14 +13,16 @@ class Database
         $this->pdo = $pdo;
     }
 
-
     public function selectAll($table)
-        {
-            $statement = $this->pdo->prepare("SELECT * FROM $table;");
+    {
 
-            $statement->execute();
+        $statement = $this->pdo->prepare("SELECT * FROM $table;");
 
-            return $statement->fetchAll(PDO::FETCH_CLASS);
-        }
+        $statement->execute();
+
+        return $statement->fetchAll(PDO::FETCH_CLASS);
+    }
+
+
+
 }
-
