@@ -17,7 +17,51 @@
 <body>
 <header>
     <h1><?= $greeting;?></h1>
-    <p>Prova xivato = <?= dd($tasks) ?></p>
+    <p>Prova xivato = dd($tasks) </p>
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th scope="col">
+                    Id
+                </th>
+                <th scope="col">
+                    Task Name
+                </th>
+                <th scope="col">
+                    Description
+                </th>
+                <th scope="col">
+                    Completed
+                </th>
+                <th scope="col">
+                    <span>Edit</span>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($tasks as $task): ?>
+            <tr>
+                <td>
+                        <?=$task->id;?>
+                </td>
+                <td>
+                        <?=$task->name;?>
+                </td>
+                <td>
+                        <?=$task->description;?>
+                </td>
+                <td>
+                        <?=$task->completed;?>
+                </td>
+                <td>
+                    <a href="#">Edit</a>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
 
 </header>
 </body>
