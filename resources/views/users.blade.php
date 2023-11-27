@@ -41,9 +41,10 @@
                             <?php foreach ($tasks as $task): ?>
                             <tr>
                                 <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0"><?= $task->id; ?></td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $task->name; ?></td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $task->description; ?></td>
-                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $task->completed; ?></td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $users->nom; ?></td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $users->cognom; ?></td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $users->email; ?></td>
+                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"><?= $users->password; ?></td>
                                 <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
                                     <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Lindsay Walton</span></a>
                                 </td>
